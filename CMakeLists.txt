@@ -7,6 +7,7 @@ set(EllipseDetection_VERSION_MINOR 0)
 
 # GDB Debug
 set(CMAKE_MAKE_TYPE Debug)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -g")
 
 # add the binary tree to the search path for include files
 #  so that we will find ...

@@ -4,4 +4,5 @@
 CMakeFiles/EllipseDetection.dir/EllipseDetection.cxx.o
  /home/jinzhengcai/Code/ellipse/EllipseDetection.cxx
  /home/jinzhengcai/Code/ellipse/EllipseDetection.hpp
+ utils/fastpdist.hpp
  utils/preprocessing.hpp
