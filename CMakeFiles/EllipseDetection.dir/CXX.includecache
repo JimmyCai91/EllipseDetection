@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jinzhengcai/Code/ellipse/EllipseDetection.cxx
+EllipseDetection.hpp
+/home/jinzhengcai/Code/ellipse/EllipseDetection.hpp
+
+/home/jinzhengcai/Code/ellipse/EllipseDetection.hpp
+opencv2/opencv.hpp
+-
+
