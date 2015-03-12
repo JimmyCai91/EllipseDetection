@@ -115,6 +115,30 @@ utils/fast:
 	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
 .PHONY : utils/fast
 
+fastpdist.o: fastpdist.cxx.o
+.PHONY : fastpdist.o
+
+# target to build an object file
+fastpdist.cxx.o:
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/fastpdist.cxx.o
+.PHONY : fastpdist.cxx.o
+
+fastpdist.i: fastpdist.cxx.i
+.PHONY : fastpdist.i
+
+# target to preprocess a source file
+fastpdist.cxx.i:
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/fastpdist.cxx.i
+.PHONY : fastpdist.cxx.i
+
+fastpdist.s: fastpdist.cxx.s
+.PHONY : fastpdist.s
+
+# target to generate assembly for a file
+fastpdist.cxx.s:
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/fastpdist.cxx.s
+.PHONY : fastpdist.cxx.s
+
 preprocessing.o: preprocessing.cxx.o
 .PHONY : preprocessing.o
 
@@ -148,6 +172,9 @@ help:
 	@echo "... utils"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... fastpdist.o"
+	@echo "... fastpdist.i"
+	@echo "... fastpdist.s"
 	@echo "... preprocessing.o"
 	@echo "... preprocessing.i"
 	@echo "... preprocessing.s"

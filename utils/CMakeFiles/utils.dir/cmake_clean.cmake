@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/utils.dir/preprocessing.cxx.o"
+  "CMakeFiles/utils.dir/fastpdist.cxx.o"
   "libutils.pdb"
   "libutils.a"
 )

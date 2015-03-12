@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/jinzhengcai/Code/ellipse/utils/fastpdist.cxx
+fastpdist.hpp
+/home/jinzhengcai/Code/ellipse/utils/fastpdist.hpp
+
+/home/jinzhengcai/Code/ellipse/utils/fastpdist.hpp
+opencv2/opencv.hpp
+-
+
 /home/jinzhengcai/Code/ellipse/utils/preprocessing.cxx
 preprocessing.hpp
 /home/jinzhengcai/Code/ellipse/utils/preprocessing.hpp

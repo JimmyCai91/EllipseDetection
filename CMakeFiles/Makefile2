@@ -69,7 +69,7 @@ all: CMakeFiles/EllipseDetection.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EllipseDetection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/EllipseDetection.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 0
 .PHONY : CMakeFiles/EllipseDetection.dir/rule
@@ -109,7 +109,7 @@ utils/preinstall:
 utils/CMakeFiles/utils.dir/all:
 	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/depend
 	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinzhengcai/Code/ellipse/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinzhengcai/Code/ellipse/CMakeFiles  2 3
 	@echo "Built target utils"
 .PHONY : utils/CMakeFiles/utils.dir/all
 
@@ -119,7 +119,7 @@ all: utils/CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
 utils/CMakeFiles/utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 0
 .PHONY : utils/CMakeFiles/utils.dir/rule
