@@ -4,6 +4,9 @@
 utils/CMakeFiles/utils.dir/fastpdist.cxx.o
  /home/jinzhengcai/Code/ellipse/utils/fastpdist.cxx
  /home/jinzhengcai/Code/ellipse/utils/fastpdist.hpp
+utils/CMakeFiles/utils.dir/findedgepoints.cxx.o
+ /home/jinzhengcai/Code/ellipse/utils/findedgepoints.cxx
+ /home/jinzhengcai/Code/ellipse/utils/findedgepoints.hpp
 utils/CMakeFiles/utils.dir/preprocessing.cxx.o
  /home/jinzhengcai/Code/ellipse/utils/preprocessing.cxx
  /home/jinzhengcai/Code/ellipse/utils/preprocessing.hpp

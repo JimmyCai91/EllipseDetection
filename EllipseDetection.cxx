@@ -1,5 +1,6 @@
 #include "EllipseDetection.hpp"
 #include "preprocessing.hpp"
+#include "findedgepoints.hpp"
 #include "fastpdist.hpp"
 
 #include <opencv2/opencv.hpp>
@@ -12,19 +13,15 @@ int main() {
 	Mat image = imread("./data/bin_im_for_count14.bmp", 0);
 	
 	// get preprocessed image
-//	Mat dst = preprocessing( image );
-//
-//	namedWindow( "Edge Map", CV_WINDOW_AUTOSIZE );
-//	imshow( "Edge Map", dst );
-//
-//	waitKey(0);
+	Mat edgemap = preprocessing( image );
+	namedWindow( "Edge_Map", CV_WINDOW_AUTOSIZE );
+	imshow( "Edge_Map", edgemap );
+	waitKey(0);
 	
-	vector<Point> disttest;
-	disttest.push_back(cvPoint(1,2));
-	disttest.push_back(cvPoint(3,4));
-	disttest.push_back(cvPoint(8,9));
-	Mat dist = fastpdist(disttest);
-	cout << "dist= " << endl << " " << dist << endl << endl;
+	// get edge points
+	vector<CvPoint> edgepoints = findedgepoints( edgemap );
+	cout << "Possible major axes: " << edgepoints.size() << " * " 
+		<< edgepoints.size() << " = " << edgepoints.size()*edgepoints.size() << endl;
 
 	JimEllipse ellipse;
 	ellipse.center = cvPoint(0,0);

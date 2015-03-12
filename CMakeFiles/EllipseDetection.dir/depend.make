@@ -4,5 +4,6 @@
 CMakeFiles/EllipseDetection.dir/EllipseDetection.cxx.o: EllipseDetection.cxx
 CMakeFiles/EllipseDetection.dir/EllipseDetection.cxx.o: EllipseDetection.hpp
 CMakeFiles/EllipseDetection.dir/EllipseDetection.cxx.o: utils/fastpdist.hpp
+CMakeFiles/EllipseDetection.dir/EllipseDetection.cxx.o: utils/findedgepoints.hpp
 CMakeFiles/EllipseDetection.dir/EllipseDetection.cxx.o: utils/preprocessing.hpp
 

@@ -139,6 +139,30 @@ fastpdist.cxx.s:
 	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/fastpdist.cxx.s
 .PHONY : fastpdist.cxx.s
 
+findedgepoints.o: findedgepoints.cxx.o
+.PHONY : findedgepoints.o
+
+# target to build an object file
+findedgepoints.cxx.o:
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/findedgepoints.cxx.o
+.PHONY : findedgepoints.cxx.o
+
+findedgepoints.i: findedgepoints.cxx.i
+.PHONY : findedgepoints.i
+
+# target to preprocess a source file
+findedgepoints.cxx.i:
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/findedgepoints.cxx.i
+.PHONY : findedgepoints.cxx.i
+
+findedgepoints.s: findedgepoints.cxx.s
+.PHONY : findedgepoints.s
+
+# target to generate assembly for a file
+findedgepoints.cxx.s:
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/findedgepoints.cxx.s
+.PHONY : findedgepoints.cxx.s
+
 preprocessing.o: preprocessing.cxx.o
 .PHONY : preprocessing.o
 
@@ -175,6 +199,9 @@ help:
 	@echo "... fastpdist.o"
 	@echo "... fastpdist.i"
 	@echo "... fastpdist.s"
+	@echo "... findedgepoints.o"
+	@echo "... findedgepoints.i"
+	@echo "... findedgepoints.s"
 	@echo "... preprocessing.o"
 	@echo "... preprocessing.i"
 	@echo "... preprocessing.s"

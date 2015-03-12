@@ -72,9 +72,32 @@ utils/CMakeFiles/utils.dir/preprocessing.cxx.o.provides: utils/CMakeFiles/utils.
 
 utils/CMakeFiles/utils.dir/preprocessing.cxx.o.provides.build: utils/CMakeFiles/utils.dir/preprocessing.cxx.o
 
+utils/CMakeFiles/utils.dir/findedgepoints.cxx.o: utils/CMakeFiles/utils.dir/flags.make
+utils/CMakeFiles/utils.dir/findedgepoints.cxx.o: utils/findedgepoints.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinzhengcai/Code/ellipse/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object utils/CMakeFiles/utils.dir/findedgepoints.cxx.o"
+	cd /home/jinzhengcai/Code/ellipse/utils && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/utils.dir/findedgepoints.cxx.o -c /home/jinzhengcai/Code/ellipse/utils/findedgepoints.cxx
+
+utils/CMakeFiles/utils.dir/findedgepoints.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utils.dir/findedgepoints.cxx.i"
+	cd /home/jinzhengcai/Code/ellipse/utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jinzhengcai/Code/ellipse/utils/findedgepoints.cxx > CMakeFiles/utils.dir/findedgepoints.cxx.i
+
+utils/CMakeFiles/utils.dir/findedgepoints.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utils.dir/findedgepoints.cxx.s"
+	cd /home/jinzhengcai/Code/ellipse/utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jinzhengcai/Code/ellipse/utils/findedgepoints.cxx -o CMakeFiles/utils.dir/findedgepoints.cxx.s
+
+utils/CMakeFiles/utils.dir/findedgepoints.cxx.o.requires:
+.PHONY : utils/CMakeFiles/utils.dir/findedgepoints.cxx.o.requires
+
+utils/CMakeFiles/utils.dir/findedgepoints.cxx.o.provides: utils/CMakeFiles/utils.dir/findedgepoints.cxx.o.requires
+	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/findedgepoints.cxx.o.provides.build
+.PHONY : utils/CMakeFiles/utils.dir/findedgepoints.cxx.o.provides
+
+utils/CMakeFiles/utils.dir/findedgepoints.cxx.o.provides.build: utils/CMakeFiles/utils.dir/findedgepoints.cxx.o
+
 utils/CMakeFiles/utils.dir/fastpdist.cxx.o: utils/CMakeFiles/utils.dir/flags.make
 utils/CMakeFiles/utils.dir/fastpdist.cxx.o: utils/fastpdist.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinzhengcai/Code/ellipse/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinzhengcai/Code/ellipse/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object utils/CMakeFiles/utils.dir/fastpdist.cxx.o"
 	cd /home/jinzhengcai/Code/ellipse/utils && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/utils.dir/fastpdist.cxx.o -c /home/jinzhengcai/Code/ellipse/utils/fastpdist.cxx
 
@@ -98,12 +121,14 @@ utils/CMakeFiles/utils.dir/fastpdist.cxx.o.provides.build: utils/CMakeFiles/util
 # Object files for target utils
 utils_OBJECTS = \
 "CMakeFiles/utils.dir/preprocessing.cxx.o" \
+"CMakeFiles/utils.dir/findedgepoints.cxx.o" \
 "CMakeFiles/utils.dir/fastpdist.cxx.o"
 
 # External object files for target utils
 utils_EXTERNAL_OBJECTS =
 
 utils/libutils.a: utils/CMakeFiles/utils.dir/preprocessing.cxx.o
+utils/libutils.a: utils/CMakeFiles/utils.dir/findedgepoints.cxx.o
 utils/libutils.a: utils/CMakeFiles/utils.dir/fastpdist.cxx.o
 utils/libutils.a: utils/CMakeFiles/utils.dir/build.make
 utils/libutils.a: utils/CMakeFiles/utils.dir/link.txt
@@ -116,6 +141,7 @@ utils/CMakeFiles/utils.dir/build: utils/libutils.a
 .PHONY : utils/CMakeFiles/utils.dir/build
 
 utils/CMakeFiles/utils.dir/requires: utils/CMakeFiles/utils.dir/preprocessing.cxx.o.requires
+utils/CMakeFiles/utils.dir/requires: utils/CMakeFiles/utils.dir/findedgepoints.cxx.o.requires
 utils/CMakeFiles/utils.dir/requires: utils/CMakeFiles/utils.dir/fastpdist.cxx.o.requires
 .PHONY : utils/CMakeFiles/utils.dir/requires
 

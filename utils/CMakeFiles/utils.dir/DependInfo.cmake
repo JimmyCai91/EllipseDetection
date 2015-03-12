@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jinzhengcai/Code/ellipse/utils/fastpdist.cxx" "/home/jinzhengcai/Code/ellipse/utils/CMakeFiles/utils.dir/fastpdist.cxx.o"
+  "/home/jinzhengcai/Code/ellipse/utils/findedgepoints.cxx" "/home/jinzhengcai/Code/ellipse/utils/CMakeFiles/utils.dir/findedgepoints.cxx.o"
   "/home/jinzhengcai/Code/ellipse/utils/preprocessing.cxx" "/home/jinzhengcai/Code/ellipse/utils/CMakeFiles/utils.dir/preprocessing.cxx.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

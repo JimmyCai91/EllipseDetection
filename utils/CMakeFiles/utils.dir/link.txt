@@ -1,2 +1,2 @@
-/usr/bin/ar cq libutils.a  CMakeFiles/utils.dir/preprocessing.cxx.o CMakeFiles/utils.dir/fastpdist.cxx.o
+/usr/bin/ar cq libutils.a  CMakeFiles/utils.dir/preprocessing.cxx.o CMakeFiles/utils.dir/findedgepoints.cxx.o CMakeFiles/utils.dir/fastpdist.cxx.o
 /usr/bin/ranlib libutils.a

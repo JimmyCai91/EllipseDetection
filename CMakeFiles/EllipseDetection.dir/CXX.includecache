@@ -11,6 +11,8 @@ EllipseDetection.hpp
 /home/jinzhengcai/Code/ellipse/EllipseDetection.hpp
 preprocessing.hpp
 /home/jinzhengcai/Code/ellipse/preprocessing.hpp
+findedgepoints.hpp
+/home/jinzhengcai/Code/ellipse/findedgepoints.hpp
 fastpdist.hpp
 /home/jinzhengcai/Code/ellipse/fastpdist.hpp
 opencv2/opencv.hpp
@@ -23,6 +25,10 @@ opencv2/opencv.hpp
 utils/fastpdist.hpp
 vector
 -
+opencv2/opencv.hpp
+-
+
+utils/findedgepoints.hpp
 opencv2/opencv.hpp
 -
 

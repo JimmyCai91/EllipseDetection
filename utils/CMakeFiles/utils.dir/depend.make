@@ -4,6 +4,9 @@
 utils/CMakeFiles/utils.dir/fastpdist.cxx.o: utils/fastpdist.cxx
 utils/CMakeFiles/utils.dir/fastpdist.cxx.o: utils/fastpdist.hpp
 
+utils/CMakeFiles/utils.dir/findedgepoints.cxx.o: utils/findedgepoints.cxx
+utils/CMakeFiles/utils.dir/findedgepoints.cxx.o: utils/findedgepoints.hpp
+
 utils/CMakeFiles/utils.dir/preprocessing.cxx.o: utils/preprocessing.cxx
 utils/CMakeFiles/utils.dir/preprocessing.cxx.o: utils/preprocessing.hpp
 
