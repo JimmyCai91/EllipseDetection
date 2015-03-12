@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jinzhengcai/Code/ellipse/utils/preprocessing.cxx
+preprocessing.hpp
+/home/jinzhengcai/Code/ellipse/utils/preprocessing.hpp
+opencv2/imgproc/imgproc.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+stdlib.h
+-
+stdio.h
+-
+
+/home/jinzhengcai/Code/ellipse/utils/preprocessing.hpp
+opencv2/opencv.hpp
+-
+

@@ -6,6 +6,6 @@
 using namespace std;
 using namespace cv;
 
-CvMat preprocessing ( CvMat inMat );
+Mat preprocessing ( Mat inMat );
 
 #endif

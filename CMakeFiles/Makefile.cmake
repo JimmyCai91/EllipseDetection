@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.2.0-rc2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.2.0-rc2/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "utils/CMakeLists.txt"
   "/usr/local/share/OpenCV/OpenCVConfig-version.cmake"
   "/usr/local/share/OpenCV/OpenCVConfig.cmake"
   "/usr/local/share/OpenCV/OpenCVModules-release.cmake"
@@ -44,9 +45,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "utils/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/EllipseDetection.dir/DependInfo.cmake"
+  "utils/CMakeFiles/utils.dir/DependInfo.cmake"
   )

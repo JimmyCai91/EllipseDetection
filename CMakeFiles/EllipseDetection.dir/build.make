@@ -96,6 +96,7 @@ EllipseDetection: /usr/local/lib/libopencv_cudafeatures2d.so.3.0.0
 EllipseDetection: /usr/local/lib/libopencv_cudacodec.so.3.0.0
 EllipseDetection: /usr/local/lib/libopencv_cudabgsegm.so.3.0.0
 EllipseDetection: /usr/local/lib/libopencv_calib3d.so.3.0.0
+EllipseDetection: utils/libutils.a
 EllipseDetection: /usr/local/share/OpenCV/3rdparty/lib/libippicv.a
 EllipseDetection: /usr/local/lib/libopencv_cudawarping.so.3.0.0
 EllipseDetection: /usr/local/lib/libopencv_objdetect.so.3.0.0

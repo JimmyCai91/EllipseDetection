@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles /home/jinzhengcai/Code/ellipse/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/jinzhengcai/Code/ellipse && $(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles /home/jinzhengcai/Code/ellipse/utils/CMakeFiles/progress.marks
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f CMakeFiles/Makefile2 utils/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f CMakeFiles/Makefile2 utils/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,68 +88,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jinzhengcai/Code/ellipse && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named EllipseDetection
+# Convenience name for target.
+utils/CMakeFiles/utils.dir/rule:
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/rule
+.PHONY : utils/CMakeFiles/utils.dir/rule
 
-# Build rule for target.
-EllipseDetection: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 EllipseDetection
-.PHONY : EllipseDetection
-
-# fast build rule for target.
-EllipseDetection/fast:
-	$(MAKE) -f CMakeFiles/EllipseDetection.dir/build.make CMakeFiles/EllipseDetection.dir/build
-.PHONY : EllipseDetection/fast
-
-#=============================================================================
-# Target rules for targets named utils
-
-# Build rule for target.
-utils: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 utils
+# Convenience name for target.
+utils: utils/CMakeFiles/utils.dir/rule
 .PHONY : utils
 
 # fast build rule for target.
 utils/fast:
-	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
 .PHONY : utils/fast
 
-EllipseDetection.o: EllipseDetection.cxx.o
-.PHONY : EllipseDetection.o
+preprocessing.o: preprocessing.cxx.o
+.PHONY : preprocessing.o
 
 # target to build an object file
-EllipseDetection.cxx.o:
-	$(MAKE) -f CMakeFiles/EllipseDetection.dir/build.make CMakeFiles/EllipseDetection.dir/EllipseDetection.cxx.o
-.PHONY : EllipseDetection.cxx.o
+preprocessing.cxx.o:
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/preprocessing.cxx.o
+.PHONY : preprocessing.cxx.o
 
-EllipseDetection.i: EllipseDetection.cxx.i
-.PHONY : EllipseDetection.i
+preprocessing.i: preprocessing.cxx.i
+.PHONY : preprocessing.i
 
 # target to preprocess a source file
-EllipseDetection.cxx.i:
-	$(MAKE) -f CMakeFiles/EllipseDetection.dir/build.make CMakeFiles/EllipseDetection.dir/EllipseDetection.cxx.i
-.PHONY : EllipseDetection.cxx.i
+preprocessing.cxx.i:
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/preprocessing.cxx.i
+.PHONY : preprocessing.cxx.i
 
-EllipseDetection.s: EllipseDetection.cxx.s
-.PHONY : EllipseDetection.s
+preprocessing.s: preprocessing.cxx.s
+.PHONY : preprocessing.s
 
 # target to generate assembly for a file
-EllipseDetection.cxx.s:
-	$(MAKE) -f CMakeFiles/EllipseDetection.dir/build.make CMakeFiles/EllipseDetection.dir/EllipseDetection.cxx.s
-.PHONY : EllipseDetection.cxx.s
+preprocessing.cxx.s:
+	cd /home/jinzhengcai/Code/ellipse && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/preprocessing.cxx.s
+.PHONY : preprocessing.cxx.s
 
 # Help Target
 help:
@@ -157,13 +145,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... utils"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... EllipseDetection"
-	@echo "... utils"
-	@echo "... EllipseDetection.o"
-	@echo "... EllipseDetection.i"
-	@echo "... EllipseDetection.s"
+	@echo "... preprocessing.o"
+	@echo "... preprocessing.i"
+	@echo "... preprocessing.s"
 .PHONY : help
 
 
@@ -175,6 +162,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jinzhengcai/Code/ellipse && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

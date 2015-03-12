@@ -56,7 +56,7 @@ CMAKE_BINARY_DIR = /home/jinzhengcai/Code/ellipse
 # Target rules for target CMakeFiles/EllipseDetection.dir
 
 # All Build rule for target.
-CMakeFiles/EllipseDetection.dir/all:
+CMakeFiles/EllipseDetection.dir/all: utils/CMakeFiles/utils.dir/all
 	$(MAKE) -f CMakeFiles/EllipseDetection.dir/build.make CMakeFiles/EllipseDetection.dir/depend
 	$(MAKE) -f CMakeFiles/EllipseDetection.dir/build.make CMakeFiles/EllipseDetection.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinzhengcai/Code/ellipse/CMakeFiles  1
@@ -69,7 +69,7 @@ all: CMakeFiles/EllipseDetection.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EllipseDetection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/EllipseDetection.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 0
 .PHONY : CMakeFiles/EllipseDetection.dir/rule
@@ -85,6 +85,56 @@ CMakeFiles/EllipseDetection.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/EllipseDetection.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory utils
+
+# Convenience name for "all" pass in the directory.
+utils/all: utils/CMakeFiles/utils.dir/all
+.PHONY : utils/all
+
+# Convenience name for "clean" pass in the directory.
+utils/clean: utils/CMakeFiles/utils.dir/clean
+.PHONY : utils/clean
+
+# Convenience name for "preinstall" pass in the directory.
+utils/preinstall:
+.PHONY : utils/preinstall
+
+#=============================================================================
+# Target rules for target utils/CMakeFiles/utils.dir
+
+# All Build rule for target.
+utils/CMakeFiles/utils.dir/all:
+	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/depend
+	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinzhengcai/Code/ellipse/CMakeFiles  2
+	@echo "Built target utils"
+.PHONY : utils/CMakeFiles/utils.dir/all
+
+# Include target in all.
+all: utils/CMakeFiles/utils.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+utils/CMakeFiles/utils.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinzhengcai/Code/ellipse/CMakeFiles 0
+.PHONY : utils/CMakeFiles/utils.dir/rule
+
+# Convenience name for target.
+utils: utils/CMakeFiles/utils.dir/rule
+.PHONY : utils
+
+# clean rule for target.
+utils/CMakeFiles/utils.dir/clean:
+	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/clean
+.PHONY : utils/CMakeFiles/utils.dir/clean
+
+# clean rule for target.
+clean: utils/CMakeFiles/utils.dir/clean
 .PHONY : clean
 
 #=============================================================================

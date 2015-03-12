@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jinzhengcai/Code/ellipse/EllipseDetection.cxx" "/home/jinzhengcai/Code/ellipse/CMakeFiles/EllipseDetection.dir/EllipseDetection.cxx.o"
+  "/home/jinzhengcai/Code/ellipse/utils/preprocessing.cxx" "/home/jinzhengcai/Code/ellipse/utils/CMakeFiles/utils.dir/preprocessing.cxx.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/jinzhengcai/Code/ellipse/utils/CMakeFiles/utils.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
