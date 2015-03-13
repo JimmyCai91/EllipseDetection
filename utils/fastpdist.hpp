@@ -7,7 +7,7 @@
 using namespace std;
 using namespace cv;
 
-Mat fastpdist( vector<Point>& xy );
+Mat fastpdist( vector<CvPoint>& xy );
 /// fastpdist
 // 2 points in xy;
 // 		| x1-x1	x1-x2 x1-x3 |

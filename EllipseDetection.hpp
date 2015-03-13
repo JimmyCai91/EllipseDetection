@@ -8,9 +8,12 @@ using namespace cv;
 class JimEllipse{
 public:
 	CvPoint center;	// center of ellipse
-	double major_axis; // major axis of ellipse
-        double minor_axis; // minor axis of ellipse
-	double orientation; // orientation of ellipse	
+	
+	CvPoint majorpoint1;
+	CvPoint majorpoint2;
+
+	double majoraxis; // major axis of ellipse
+//	double orientation; // orientation of ellipse	
 };
 
 #endif

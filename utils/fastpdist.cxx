@@ -3,14 +3,11 @@
 using namespace std;
 using namespace cv;
 
-Mat fastpdist( vector<Point>& _xy )
+Mat fastpdist( vector<CvPoint>& xy )
 {	
 	// vector contains at least 2 points
-	CV_Assert(_xy.size() > 1);
+	CV_Assert(xy.size() > 1 && xy.size() < 20001);
 
-	// copy points
-	vector<Point> xy = _xy;
-	
 	// create X and Y matrix
 	Mat X, Y;
 	X.create(xy.size(), xy.size(), CV_64F);
