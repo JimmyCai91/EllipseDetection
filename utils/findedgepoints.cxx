@@ -23,7 +23,7 @@ vector<CvPoint> findedgepoints( Mat edgemap )
 		for(j=0; j<nCols; ++j)
 		{
 			if( p[j] == 255 )
-				points.push_back(cvPoint(i,j));
+				points.push_back(cvPoint(j,i));
 		}
 	}
 
