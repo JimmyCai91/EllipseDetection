@@ -17,7 +17,7 @@
 using namespace std;
 using namespace cv;
 
-double pointdist( CvPoint point1, CvPoint point2 );
+double pointdist( Point point1, Point point2 );
 
 int main() {
 	
@@ -144,7 +144,7 @@ int main() {
 	return 0;
 }
 
-inline double pointdist( CvPoint point1, CvPoint point2 )
+inline double pointdist( Point point1, Point point2 )
 {
 	double dist;
 	double p1x, p1y, p2x, p2y;
